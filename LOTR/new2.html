@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+		<title> Lord of the Rings and The Hobbit</title>
+		<style type="text/css">
+	
+			#pag{
+				width:100%;
+				height:100%;
+				background-image:url('img/mordor.jpg') ;
+				border-radius: 10px 10px 10px 10px ;
+				background-size:100% 100%;
+			}
+			#container{
+				width:920px;
+				height:925px;
+				margin:auto;
+				border:1px solid black;
+				box-shadow: 2px 0 3px #000,  -2px 0 3px #000;
+				border-radius:10px;
+				background:white;
+			}
+			#topo{
+				width:920px;
+				height: 100px;
+				margin:auto;
+				background-image:url('img/ring.jpg');
+				background-size:100% 100px;
+				background-repeat: no-repeat;
+				box-shadow: 2px 0 3px #000,  -2px 0 3px #000;
+				border-radius: 10px 10px 0px 0px ;
+				
+			}
+			#menu{
+				height:35px;
+				width:920px;
+				float:left;
+				background:silver;
+				display:inline;
+				
+			}
+			#rodape{
+				height:35px;
+				width:100%;
+				background:gray;
+				clear: both;
+				border-radius: 0px 0px 5px 5px ;
+			}
+			#corpo{
+				height:775px;
+				width:100%;	
+							
+			}
+			.rodape{
+				position:relative;
+				top:10px;
+				left:2px;
+			}
+			#link{
+				text-decoration: none;
+				float:right;
+				margin-right:50px;
+				color:black;
+			}
+			#menu ul li{
+				list-style:none;
+				display:inline;
+				margin-left:15px;
+			}
+			#menu ul li:hover{
+				color:#CCCCCC;
+				background-color:#797979;
+			}
+			a{
+				text-decoration: none;
+				color:black;
+			}
+		
+		</style>
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  		<link rel="stylesheet" href="/resources/demos/style.css" />
+  		<script>
+  		$(function() {
+   			 $( "#fale" ).dialog({
+      		autoOpen: false,
+      		show: {
+        	effect: "blind",
+        	duration: 1000
+      		},
+      		hide: {
+        	effect: "explode",
+        	duration: 1000
+      		}
+   		 });
+ 
+    		$( "#open" ).click(function() {
+      		$( "#fale" ).dialog( "open" );
+    	});
+ 	 });
+ 	 $(function() {
+   			 $( "#quemsomos" ).dialog({
+      		autoOpen: false,
+      		show: {
+        	effect: "blind",
+        	duration: 1000
+      		},
+      		hide: {
+        	effect: "explode",
+        	duration: 1000
+      		}
+   		 });
+ 
+    		$( "#open1" ).click(function() {
+      		$( "#quemsomos" ).dialog( "open" );
+    	});
+ 	 });
+ 	 </script>
+	</head>
+	<body> 
+	<div id="pag">
+		<div id="container">
+			<div id="topo"> </div>
+			<div id="menu">
+				<ul>
+					<li><a href="#"> Home</li></a>
+					<li><a href="#">Menu</li></a>
+					<li><a href="#">Visualizar</li></a>
+					<li><div id="fale" title="Fale Conosco">
+	  						Nome: <input type="text" /></br>
+	  						E-mail:<input type="text" /></br>
+	  						Comentário:<textarea rows="10" cols="25"></textarea>
+	  						<input type="submit" />
+					</div> </li>
+ 					<li id="open"><a href="#">Fale Conosco</a></li>
+						<li><div id="quemsomos" title="Quem somos"> 
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non metus sit amet erat dignissim feugiat. Quisque a erat quis nulla pulvinar scelerisque. 
+							Donec fermentum diam a nunc ullamcorper, quis mattis metus porttitor. Vivamus ante dolor, rutrum et pretium id, aliquam in enim. Ut posuere sed libero et blandit. 
+							Maiores informações em breve! :D   
+						</div> </li>
+					<li id="open1"><a href="#">Quem Somos</a></li>
+					<li><a href="login.html" id="link">Login</a></li>
+				</ul>
+			</div>
+			<div id="corpo">
+				<p><h3>Mais uma parte do texto Lorem Ipsum</h3></p></br>
+					 <p>Praesent commodo pharetra imperdiet. Morbi egestas commodo ultrices. Nullam scelerisque arcu augue, dapibus mattis tortor accumsan vitae. 
+					 	Fusce nunc nulla, lacinia et metus ac, eleifend molestie nunc. Vivamus nibh libero, egestas ac sem vel, eleifend mattis mauris. Nunc viverra, nunc sit amet mollis vehicula, sapien leo fringilla tellus, sed venenatis magna sem id sem. Sed nisi arcu, ultricies vitae dolor vel, rhoncus faucibus ante. Curabitur consectetur fermentum lacinia. Fusce sit amet egestas ligula. Quisque sodales, urna ac convallis egestas, metus augue ultricies enim, ut feugiat nulla nunc nec metus.
+					 	 Morbi sit amet ultricies orci. Fusce ultricies sit amet quam in adipiscing.
+						In hac habitasse platea dictumst. Nunc in risus tellus. Nunc lacus metus, vestibulum eget facilisis sit amet, egestas posuere augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In eget venenatis nunc. 
+						Suspendisse convallis enim a luctus molestie. Suspendisse nisi ipsum, consectetur lobortis pellentesque ut, ultricies eu erat
+						<p><a href="index.php"><button> Página Inicial</button></a></p>
+				
+			</div>		
+			<div id="rodape">
+				<strong class="rodape">Created by Aline Alves</strong>
+			</div>
+		</div>
+	</div>
+		</body>
+	</html>

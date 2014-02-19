@@ -1,0 +1,129 @@
+#pag{
+	width:100%;
+	background-image:url('img/mordor.jpg') ;
+	border-radius: 10px 10px 10px 10px ;
+	background-size:100% 100%;
+}
+#container{
+	width:950px;
+	margin:auto;	
+	overflow: scroll;
+	border:1px solid black;
+	box-shadow: 2px 0 3px #000,  -2px 0 3px #000;
+	border-radius:10px;
+	background:white;
+}
+#topo{
+	width:950px;
+	height: 100px;
+	margin:auto;
+	background-image:url('img/ring.jpg');
+	background-size:100% 100px;
+	background-repeat: no-repeat;
+	box-shadow: 2px 0 3px #000,  -2px 0 3px #000;
+	border-radius: 10px 10px 0px 0px ;
+	
+}
+#menu{
+	height:35px;
+	width:950px;
+	float:left;
+	background:silver;
+	display:inline;
+	
+}
+#rodape{
+	height:30px;
+	width:100%;
+	background:gray;
+	clear: both;
+	border-radius: 0px 0px 5px 5px ;
+}
+#corpo{
+	min-height:775px;
+	width:100%;
+}
+.rodape{
+	position:relative;
+	top:10px;
+	left:2px;
+}
+#link{
+	text-decoration: none;
+	float:right;
+	margin-right:50px;
+	margin-bottom:900px;
+	color:black;
+}
+#menu ul li{
+	list-style:none;
+	display:inline;
+	margin-left:15px;
+}
+#menu ul li:hover{
+	color:#CCCCCC;
+	background-color:#797979;
+}
+a{
+	text-decoration: none;
+	color:black;
+}
+a:focus { 
+color: #000; }
+a:hover {
+color: blue; }
+	
+#new{
+	width:950px;
+	float:left;
+	margin-top:50px;
+	
+	
+	
+}	
+#new1{
+	width:950px;
+	margin-top:150px;
+	margin-right:600px;
+	float:left;
+	
+	
+}	
+#img{
+	width:250px;
+	height:250px;
+	background-image:url('img/frodo.jpg');
+	background-size: 250px 250px;
+	
+	margin-top:50px;
+	
+}
+h3{
+	position:relative;
+	top:30px;
+	left:50px;
+}
+h3{
+	position:relative;
+	margin-top:auto;
+	left:50px;
+}
+#newsletter{
+	width:190px;
+	position:relative;
+	margin-left:700px;
+	border:red dashed 1px;
+	float:right;
+}
+#coment{
+	height:30px;
+	width:50px;
+	margin-top: 10px;
+}
+#form{
+	width:60px;
+	height:60px;
+	position:relative;
+	left:40px;
+	top:130px;
+}
